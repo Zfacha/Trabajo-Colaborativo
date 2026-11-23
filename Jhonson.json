@@ -1,0 +1,10 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const btnReserva = document.getElementById("btn-reservar");
+
+    if (btnReserva) {
+        btnReserva.addEventListener("click", () => {
+            const servicio = btnReserva.getAttribute("data-servicio");
+            alert(`Solicitud iniciada para: ${servicio}. Un asesor se comunicará contigo pronto.`);
+        });
+    }
+});
